@@ -13,11 +13,10 @@ import android.widget.RelativeLayout;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import org.erickzarat.android.photosfeed.MainActivity;
+import org.erickzarat.android.photosfeed.main.ui.MainActivity;
 import org.erickzarat.android.photosfeed.PhotoFeedApp;
 import org.erickzarat.android.photosfeed.R;
 import org.erickzarat.android.photosfeed.login.LoginPresenter;
-import org.erickzarat.android.photosfeed.login.events.LoginEvent;
 
 import javax.inject.Inject;
 

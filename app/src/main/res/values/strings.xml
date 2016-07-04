@@ -8,4 +8,16 @@
 	<string name="login.error.message.signin">Imposible iniciar sesion %s</string>
 	<string name="login.error.message.signup">Imposible registrar nuevo usuario %s</string>
 	<string name="login.notice.message.signup">Usuario agregado exitosamente</string>
+
+	<string name="main.title.list">Fotos</string>
+	<string name="main.title.map">Mapa</string>
+	<string name="main.notice.upload.init">Fotografía en proceso de publicación</string>
+	<string name="main.notice.upload.complete">Fotografía publicada exitosamente</string>
+	<string name="main.error.dispatch.camera">Error al crear archivo</string>
+	<string name="main.menu.action.logout">Cerrar sesión</string>
+	<string name="main.message.picture.source">Selecciona una foto</string>
+	<string name="main.error.location.notavailable">Imposible obtener ubicacion</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
