@@ -15,6 +15,11 @@ import org.erickzarat.android.photosfeed.main.di.MainComponent;
 import org.erickzarat.android.photosfeed.main.di.MainModule;
 import org.erickzarat.android.photosfeed.main.ui.MainActivity;
 import org.erickzarat.android.photosfeed.main.ui.MainView;
+import org.erickzarat.android.photosfeed.photolist.di.DaggerPhotoListComponent;
+import org.erickzarat.android.photosfeed.photolist.di.PhotoListComponent;
+import org.erickzarat.android.photosfeed.photolist.di.PhotoListModule;
+import org.erickzarat.android.photosfeed.photolist.ui.PhotoListView;
+import org.erickzarat.android.photosfeed.photolist.ui.adapters.OnItemClickListener;
 
 /**
  * Created by zarathos on 2/07/16
@@ -70,4 +75,16 @@ public class PhotoFeedApp extends Application{
                 .mainModule(new MainModule(view, titles, fragments, manager))
                 .build();
     }
+
+    public PhotoListComponent getPhotoListComponent(Fragment fragment, PhotoListView view, OnItemClickListener onItemClickListener) {
+        return DaggerPhotoListComponent
+                .builder()
+                .photoFeedAppModule(photoFeedModule)
+                .domainModule(domainModule)
+                .libsModule(new LibsModule(fragment))
+                .photoListModule(new PhotoListModule(view, onItemClickListener))
+                .build();
+
+    }
+
 }
