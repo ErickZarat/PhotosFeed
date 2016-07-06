@@ -34,7 +34,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import org.erickzarat.android.photosfeed.PhotoFeedApp;
 import org.erickzarat.android.photosfeed.photolist.ui.PhotoListFragment;
-import org.erickzarat.android.photosfeed.PhotoMapFragment;
+import org.erickzarat.android.photosfeed.photomap.ui.PhotoMapFragment;
 import org.erickzarat.android.photosfeed.R;
 import org.erickzarat.android.photosfeed.login.ui.LoginActivity;
 import org.erickzarat.android.photosfeed.main.MainPresenter;
